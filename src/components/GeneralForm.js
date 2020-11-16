@@ -33,7 +33,7 @@ class GeneralForm extends Component {
     const { general } = this.props;
     
     return(
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className="mx-3">
         <div className="form-group">
           <label htmlFor="genFName">First Name: </label>
           <input className="form-control" placeholder={general.fName} type="text" id="fNameInput" name="fName" onChange={this.handleChange}/>
@@ -54,7 +54,7 @@ class GeneralForm extends Component {
           <input className="form-control" placeholder={general.phone} type="text" id="phoneInput" name="phone" onChange={this.handleChange} />
           </div>
 
-        <button type="submit" className="btn btn-outline-success">Submit</button>
+        <button type="submit" className="btn btn-outline-success mb-1">Submit</button>
       </form>
     )
   }

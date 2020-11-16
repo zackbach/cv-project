@@ -33,7 +33,7 @@ class JobForm extends Component {
     const { job } = this.props;
     
     return(
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className="mx-3">
         <div className="form-group">
           <label htmlFor="jobName">Name of Job: </label>
           <input className="form-control" placeholder={job.name} type="text" id="nameInput" name="name" onChange={this.handleChange}/>
@@ -54,7 +54,7 @@ class JobForm extends Component {
           <input className="form-control" placeholder={job.end} type="date" id="endInput" name="end" onChange={this.handleChange} />
         </div>
 
-        <button type="submit" className="btn btn-outline-success">Submit</button>
+        <button type="submit" className="btn btn-outline-success mb-1">Submit</button>
       </form>
     )
   }
