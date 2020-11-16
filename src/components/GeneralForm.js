@@ -34,19 +34,27 @@ class GeneralForm extends Component {
     
     return(
       <form onSubmit={this.onSubmit}>
-        <label htmlFor="genFName">First Name: </label>
-        <input placeholder={general.fName} type="text" id="fNameInput" name="fName" onChange={this.handleChange}/>
+        <div className="form-group">
+          <label htmlFor="genFName">First Name: </label>
+          <input className="form-control" placeholder={general.fName} type="text" id="fNameInput" name="fName" onChange={this.handleChange}/>
+        </div>
 
-        <label htmlFor="genLName">Last Name: </label>
-        <input placeholder={general.lName} type="text" id="lNameInput" name="lName" onChange={this.handleChange} />
+        <div className="form-group">
+          <label htmlFor="genLName">Last Name: </label>
+          <input className="form-control" placeholder={general.lName} type="text" id="lNameInput" name="lName" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="genEmail">Email: </label>
-        <input placeholder={general.email} type="text" id="emailInput" name="email" onChange={this.handleChange} />
+        <div className="form-group">
+          <label htmlFor="genEmail">Email: </label>
+          <input className="form-control" placeholder={general.email} type="text" id="emailInput" name="email" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="genPhone">Phone Number: </label>
-        <input placeholder={general.phone} type="text" id="phoneInput" name="phone" onChange={this.handleChange} />
+        <div className="form-group">
+          <label htmlFor="genPhone">Phone Number: </label>
+          <input className="form-control" placeholder={general.phone} type="text" id="phoneInput" name="phone" onChange={this.handleChange} />
+          </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-outline-success">Submit</button>
       </form>
     )
   }

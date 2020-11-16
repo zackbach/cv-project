@@ -60,7 +60,7 @@ class JobContainer extends Component {
         {jobs.map((job) => {
           return <Job key={uniqid()} job={job} handleDelete={this.handleDelete} handleSubmit = {this.handleSubmit}/>
         })}
-        <button onClick={this.handleNewJob}>Add Job</button>
+        <button onClick={this.handleNewJob} className="btn btn-primary mb-3">Add Job</button>
       </div>
     )
   }

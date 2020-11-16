@@ -8,13 +8,16 @@ import GeneralContainer from './components/GeneralContainer'
   render() {
     return(
       <div>
-        <h1>Resume Application</h1>
-        <h2>General Info</h2>
-        <GeneralContainer />
-        <h2>Education</h2>
-        <SchoolContainer />
-        <h2>Work Experience</h2>
-        <JobContainer />
+        <h1 className="text-center mt-2"><strong>Resume Application</strong></h1>
+        <div className="mx-3">
+          <GeneralContainer />
+          <br></br>
+          <h2>Education</h2>
+          <SchoolContainer />
+          <br></br>
+          <h2>Work Experience</h2>
+          <JobContainer/>
+        </div>
       </div>
     );
   }

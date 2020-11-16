@@ -60,7 +60,7 @@ class SchoolContainer extends Component {
         {schools.map((school) => {
           return <School key={uniqid()} school={school} handleDelete={this.handleDelete} handleSubmit = {this.handleSubmit}/>
         })}
-        <button onClick={this.handleNewSchool}>Add School</button>
+        <button onClick={this.handleNewSchool} className="btn btn-primary">Add School</button>
       </div>
     )
   }

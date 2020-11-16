@@ -38,7 +38,7 @@ class Job extends Component {
     return(
       <div>
         {content}
-        <button onClick={() => this.props.handleDelete(job.index)}>Delete</button>
+        <button onClick={() => this.props.handleDelete(job.index)} className="btn btn-outline-danger mx-3 mb-3">Delete</button>
       </div>
     )
   }

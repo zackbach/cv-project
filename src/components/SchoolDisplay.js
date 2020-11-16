@@ -9,12 +9,11 @@ class SchoolDisplay extends Component {
     const { school, handleFormOpen } = this.props;
 
     return(
-      <div>
-        <p>{school.name}</p>
-        <p>{school.degree}</p>
-        <p>{school.start}</p>
-        <p>{school.end}</p>
-        <button onClick={handleFormOpen}>Edit</button>
+      <div className="mx-3">
+        <p className="mb-0">{school.name}</p>
+        <p className="mb-0">{school.degree}</p>
+        <p className="mb-2">Attended from {school.start} to {school.end}</p>
+        <button onClick={handleFormOpen} className="btn btn-outline-primary mb-1">Edit</button>
       </div>
     )
   }

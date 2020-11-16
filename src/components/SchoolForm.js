@@ -34,19 +34,27 @@ class SchoolForm extends Component {
     
     return(
       <form onSubmit={this.onSubmit}>
-        <label htmlFor="schoolName">Name of School: </label>
-        <input placeholder={school.name} type="text" id="nameInput" name="name" onChange={this.handleChange}/>
+        <div className="form-group">
+          <label htmlFor="schoolName">Name of School: </label>
+          <input className="form-control" placeholder={school.name} type="text" id="nameInput" name="name" onChange={this.handleChange}/>
+        </div>
 
-        <label htmlFor="schoolDegree">Degree: </label>
-        <input placeholder={school.degree} type="text" id="degreeInput" name="degree" onChange={this.handleChange} />
+        <div class="form-group">
+         <label htmlFor="schoolDegree">Degree: </label>
+         <input className="form-control" placeholder={school.degree} type="text" id="degreeInput" name="degree" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="schoolStart">Starting Date: </label>
-        <input placeholder={school.start} type="date" id="startInput" name="start" onChange={this.handleChange} />
+        <div class="form-group">
+          <label htmlFor="schoolStart">Starting Date: </label>
+          <input className="form-control" placeholder={school.start} type="date" id="startInput" name="start" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="schoolEnd">Ending Date: </label>
-        <input placeholder={school.end} type="date" id="endInput" name="end" onChange={this.handleChange} />
+        <div class="form-group">
+          <label htmlFor="schoolEnd">Ending Date: </label>
+          <input className="form-control" placeholder={school.end} type="date" id="endInput" name="end" onChange={this.handleChange} />
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-outline-success">Submit</button>
       </form>
     )
   }

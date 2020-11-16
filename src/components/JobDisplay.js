@@ -9,12 +9,11 @@ class JobDisplay extends Component {
     const { job, handleFormOpen } = this.props;
 
     return(
-      <div>
-        <p>{job.name}</p>
-        <p>{job.position}</p>
-        <p>{job.start}</p>
-        <p>{job.end}</p>
-        <button onClick={handleFormOpen}>Edit</button>
+      <div className="mx-3">
+        <p className="mb-0">{job.name}</p>
+        <p className="mb-0">{job.position}</p>
+        <p className="mb-2">Worked from {job.start} to {job.end}</p>
+        <button onClick={handleFormOpen} className="btn btn-outline-primary mb-1">Edit</button>
       </div>
     )
   }

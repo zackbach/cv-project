@@ -34,19 +34,27 @@ class JobForm extends Component {
     
     return(
       <form onSubmit={this.onSubmit}>
-        <label htmlFor="jobName">Name of Job: </label>
-        <input placeholder={job.name} type="text" id="nameInput" name="name" onChange={this.handleChange}/>
+        <div className="form-group">
+          <label htmlFor="jobName">Name of Job: </label>
+          <input className="form-control" placeholder={job.name} type="text" id="nameInput" name="name" onChange={this.handleChange}/>
+        </div>
 
-        <label htmlFor="jobPosition">Position: </label>
-        <input placeholder={job.position} type="text" id="positionInput" name="position" onChange={this.handleChange} />
+        <div class="form-group">
+          <label htmlFor="jobPosition">Position: </label>
+          <input className="form-control" placeholder={job.position} type="text" id="positionInput" name="position" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="jobStart">Starting Date: </label>
-        <input placeholder={job.start} type="date" id="startInput" name="start" onChange={this.handleChange} />
+        <div class="form-group">
+          <label htmlFor="jobStart">Starting Date: </label>
+          <input className="form-control" placeholder={job.start} type="date" id="startInput" name="start" onChange={this.handleChange} />
+        </div>
 
-        <label htmlFor="jobEnd">Ending Date: </label>
-        <input placeholder={job.end} type="date" id="endInput" name="end" onChange={this.handleChange} />
+        <div class="form-group">
+          <label htmlFor="jobEnd">Ending Date: </label>
+          <input className="form-control" placeholder={job.end} type="date" id="endInput" name="end" onChange={this.handleChange} />
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-outline-success">Submit</button>
       </form>
     )
   }
