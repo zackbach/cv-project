@@ -40,7 +40,7 @@ class JobContainer extends Component {
   handleSubmit = (name, position, start, end, index) => {
     let job = {
       name: name,
-      degree: position,
+      position: position,
       start: start,
       end: end,
       index: index,

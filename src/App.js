@@ -24,3 +24,5 @@ import GeneralContainer from './components/GeneralContainer'
 }
 
 export default App;
+
+//TODO: ADD FORM VALIDATION, FIX GITHUB PAGES (NOT UP TO DATE)
